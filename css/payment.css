@@ -1,0 +1,142 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "Roboto", "Arial", sans-serif;
+	text-transform: uppercase;
+	background-color: green;
+	background-image: url("../img/payment/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.prev-wrapper{
+	display: flex;
+	align-items: center;
+}
+.prev{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+	border: 1px solid #222;
+	text-decoration: none;
+	font-size: 22px;
+	background-color: #fff;
+	color: #222;
+}
+.container{
+	width: 350px;
+	margin: 100px auto 0;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.indicators{
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	margin: 
+}
+.indicators-item{
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	background-color: #ccc;
+	border-radius: 50%;
+}
+.indicators-item-active{
+	background-color: gray;
+}
+.heading{
+	position: relative;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 18px
+}
+.items{
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+.credit-card{
+	border-top: 1px solid #ccc;
+}
+.card-active::before{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	height: 20px;
+	width: 20px;
+	content: "";
+	background-image: url("../img/payment/check.svg");
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+.method-link{
+	position: relative;
+	display: block;
+	padding: 20px 0 20px 90px;
+	text-decoration: none;
+	color: gray;
+}
+.card-active{
+	color: #222;
+	font-weight: bold;
+}
+.img{
+	padding: 20px 0 20px 90px;
+	background-repeat: no-repeat;
+	background-size: 55px 30px;
+	background-position: 20px center;
+}
+.img-1{
+	background-image: url("../img/payment/visa.svg");
+}
+.img-2{
+	background-image: url("../img/payment/mastercard.svg");
+}
+.img-3{
+	background-image: url("../img/payment/maestro.svg");
+}
+.method-link:hover{
+	background-color: #ccc;
+}
+.next{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 16px;
+	padding: 20px;
+	color: #fff;
+	background-color: #5f86ed;
+}
+.next:active{
+	transform: translateY(1px);
+}
+.next::after{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 3px;
+	height: 16px;
+	width: 16px;
+	content: "";
+	background-image: url("./img/arrow.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.next-wrapper{
+	display: flex;
+	align-items: center;
+}
